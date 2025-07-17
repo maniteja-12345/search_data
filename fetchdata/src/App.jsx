@@ -4,6 +4,7 @@ import './App.css'
 
 function App() {
   let [count, setCount] = useState(0)
+  // Here count variable is created just to trigger a Comp re-render when needed
   let [apiData, setApiData] = useState(null)
   let [searchItem, setSearchItem]  = useState('')
   let [filteredQuotes, setFilteredQuotes] = useState(null)
