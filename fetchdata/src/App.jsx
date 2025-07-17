@@ -19,8 +19,7 @@ function App() {
     })
     setFilteredQuotes(results)
     setFilter(true)
-    // console.log(results)
-    // console.log(filteredQuotes)
+    
   }
 
   function handleClear(){
@@ -35,7 +34,7 @@ function App() {
       try{
         let res = await fetch('https://dummyjson.com/quotes')
         if(!res.ok){
-          throw new Error('error cooured')
+          throw new Error('error occured')
         }
         let data = await res.json()
         
